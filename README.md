@@ -9,6 +9,6 @@ Run `npm install`.
 
 Run `npm run dev`.
 
-The app will run at `https://localhost:3000`.
+The app will run at `http://localhost:3000`.
 
 Changes to assets are compiled automatically.
