@@ -239,7 +239,3 @@ export const questions = [{
         "answers": []
     }
 ]
-
-export default {
-    questions,
-}

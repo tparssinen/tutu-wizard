@@ -1,7 +1,7 @@
 import Body from '../components/Body.js'
 import Layout from '../components/Layout.js'
 import Link from 'next/link'
-import questions from '../const/Questions'
+import {questions} from '../const/Questions'
 
 const colorBlue = '#0e47d4'
 
@@ -76,7 +76,7 @@ const Question = (props) => {
 Question.getInitialProps = async function (context) {
   const { id } = context.query
   console.log(`Fetched question: ${ id }`)
-  const question = questions.questions.filter(question => question.id == id)[0]
+  const [question] = questions.filter(question => question.id == id)
   return { question }
 }
 
